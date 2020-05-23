@@ -1,0 +1,22 @@
+i.icon{
+    font-size:1.5rem;
+}
+
+.container.main{
+    margin-top:7rem;
+}
+
+#delete{
+    display:inline;
+}
+
+form.delete-form {
+    display:inline !important;
+}
+
+span{
+    color:gray;
+    font-size:.91rem;
+    text-transform:uppercase;
+}
+
