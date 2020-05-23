@@ -1,0 +1,116 @@
+<article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-restful-blog-app" class="anchor" aria-hidden="true" href="#restful-blog-app"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RESTful Blog App</h1>
+<p><strong>RESTful Blog App</strong> is a web application developed with best applications of RESTful Routing using Node.JS, Express.JS, Embedded JavaScript (EJS) and more. It is made while pursuing <a href="https://www.udemy.com/the-web-developer-bootcamp/" rel="nofollow">The Web Developer Bootcamp</a> course on <a href="https://www.udemy.com/" rel="nofollow">Udemy</a>. This 40+ hour course covers HTML, CSS, Javascript, Node, Express, MongoDB, Git, and a bunch of other smaller topics along the way.</p>
+<h3><a id="user-content-course-instructor-colt-steele" class="anchor" aria-hidden="true" href="#course-instructor-colt-steele"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Course Instructor: <a href="https://www.linkedin.com/in/coltsteele/" rel="nofollow">Colt Steele</a></h3>
+<h3><a id="user-content-restful-routes" class="anchor" aria-hidden="true" href="#restful-routes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RESTful Routes:</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Path</th>
+<th>HTTP Verb</th>
+<th>Purpose</th>
+<th>Mongoose Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Index</td>
+<td>/blogs</td>
+<td>GET</td>
+<td>List all blogs</td>
+<td>Blog.find()</td>
+</tr>
+<tr>
+<td>New</td>
+<td>/blogs/new</td>
+<td>GET</td>
+<td>Show new blog form</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Create</td>
+<td>/blogs</td>
+<td>POST</td>
+<td>Create a new blog, then redirect somewhere</td>
+<td>Blog.create()</td>
+</tr>
+<tr>
+<td>Show</td>
+<td>/blogs/:id</td>
+<td>GET</td>
+<td>Show info about one specific blog</td>
+<td>Blog.findById()</td>
+</tr>
+<tr>
+<td>Edit</td>
+<td>/blogs/:id/edit</td>
+<td>GET</td>
+<td>Show edit form for one blog</td>
+<td>Blog.findById()</td>
+</tr>
+<tr>
+<td>Update</td>
+<td>/blogs/:id</td>
+<td>PUT</td>
+<td>Update a particular blog, then redirect somewhere</td>
+<td>Blog.findByIdAndUpdate()</td>
+</tr>
+<tr>
+<td>Destroy</td>
+<td>/blogs/:id</td>
+<td>DELETE</td>
+<td>Delete a particular blog, then redirect somewhere</td>
+<td>Blog.findByIdAndRemove()</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="user-content-description" class="anchor" aria-hidden="true" href="#description"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Description:</h3>
+<ul>
+<li><strong>app.js</strong> is the main file that is the heart of our NodeJS web application and contains the RESTful Routes defined for each event.</li>
+<li><strong>views</strong> directory contains the relevant files, the EJS templates, that render on each event.</li>
+<li><strong>public/css</strong> directory contains CSS to create better interface.</li>
+<li><strong>package.json</strong> file contains the information towards the various frameworks that were installed within the course of this project.</li>
+</ul>
+<h3><a id="user-content-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Frameworks &amp; Middlewares:</h3>
+<ul>
+<li><strong><a href="https://expressjs.com/" rel="nofollow">ExpressJS</a></strong> is used for Server Side Routing applications.</li>
+<li><strong><a href="http://mongoosejs.com/" rel="nofollow">MongooseJS</a></strong> is used for Back-End Database operations with MongoDB NoSQL Database.</li>
+<li><strong><a href="https://github.com/expressjs/body-parser/">Body-Parser</a></strong> is used to Parse the data that was received as a result of HTTP POST request.</li>
+<li><strong><a href="https://github.com/expressjs/method-override">Method-Override</a></strong> is used to override the HTTP verb to implement PUT and DELETE methods.</li>
+<li><strong><a href="https://expressjs.com/en/starter/static-files.html" rel="nofollow">Express.Static()</a></strong> is used to serve the Static files CSS, JS, etc. in the directory as specified.</li>
+<li><strong>Sanitizer</strong> is used to sanitize the contents of HTML inputs and keeps the Database Safe.</li>
+</ul>
+ 
+  <p>
+ <h2><a id="user-content-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blog Screen Shots:</h2>
+ 
+ 
+  <h3><a id="user-contnt-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Home - Display All Blogs:</h3>
+<img src="screenshots/home.png">
+<br>
+  <h3><a id="user-content-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Show Selected Blog:</h3>
+<img src="screenshots/Screenshot 2020-05-22 at 10.10.19 PM.png">
+<br>
+
+
+
+  <h3><a id="user-content-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Update Blog:</h3>
+<img src="screenshots/Screenshot 2020-05-22 at 10.10.33 PM.png">
+<br>
+
+
+  <h3><a id="user-content-frameworks--middlewares" class="anchor" aria-hidden="true" href="#frameworks--middlewares"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add New Blog:</h3>
+<img src="screenshots/Screenshot 2020-05-22 at 10.10.43 PM.png">
+<br>
+
+
+ 
+ </p>
+ 
+ 
+<h3><a id="user-content-note" class="anchor" aria-hidden="true" href="#note"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Note:</h3>
+ 
+
+  
+<p>The application is hosted on <a href="https://aws.amazon.com/cloud9/" rel="nofollow">Cloud9 IDE</a>, an open-source Cloud Service provided by Amazon Web Services (AWS) for developing web applications.</p>
+</article>
